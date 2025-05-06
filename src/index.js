@@ -11,14 +11,22 @@ import books from "./books";
 import ForList from "./ForList";
 import ForNest from "./ForNest";
 import ForFilter from "./ForFilter";
+import ForSort from "./ForSort";
+import SelectStyle from "./SelectStyle";
+import StyledPanel from "./StyledPanel";
+import TitledPanel from "./TitledPanel";
+import StateParent from "./StateParent";
+import EventMouse from "./EventMouse";
+import EventCompare from "./EventCompare";
+import EventError from "./EventError";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
 //   <React.StrictMode>
-//     <App />
+//     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<ForFilter src={books} />);
+root.render(<EventError src="./image/wings.jpg" alt="サンプル画像" />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

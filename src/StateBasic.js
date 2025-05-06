@@ -1,17 +1,17 @@
 import { useState } from "react";
 
-export default function StateBasic({ init }) {
+export default function Statebasic({ init }) {
   const [count, setCount] = useState(init);
-  console.log(`count is ${count}`);
 
-  const handleClick = () => setCount(count + 1);
-  const decreseCount = () => setCount(count - 1);
+  const handleClick = () => {
+    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
+  };
 
   return (
     <>
       <button onClick={handleClick}>カウント</button>
-      <button onClick={decreseCount}>カウントを減らす</button>
-      <p>{count}回、カウントされました。</p>
+      <p>{count}回、クリックされました。</p>
     </>
   );
 }

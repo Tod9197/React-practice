@@ -11,7 +11,7 @@ const books = [
     title: "これから始めるReact 実践入門",
     price: 4440,
     summary: "javaScriptフレームワーク[React]について",
-    download: true,
+    download: false,
   },
 ];
 
