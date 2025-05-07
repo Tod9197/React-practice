@@ -19,6 +19,12 @@ import StateParent from "./StateParent";
 import EventMouse from "./EventMouse";
 import EventCompare from "./EventCompare";
 import EventError from "./EventError";
+import EventObj from "./EventObj";
+import EventPoint from "./EventPoint";
+import EventKey from "./EventKey";
+import EventArgs from "./EventArgs";
+import EventArgs2 from "./EventArgs2";
+import EventProgation from "./EventProgation";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -26,7 +32,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<EventError src="./image/wings.jpg" alt="サンプル画像" />);
+root.render(<EventProgation />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
