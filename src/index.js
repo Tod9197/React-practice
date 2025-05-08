@@ -25,6 +25,7 @@ import EventKey from "./EventKey";
 import EventArgs from "./EventArgs";
 import EventArgs2 from "./EventArgs2";
 import EventProgation from "./EventProgation";
+import EventOnce from "./EventOnce";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -32,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<EventProgation />);
+root.render(<EventOnce />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
