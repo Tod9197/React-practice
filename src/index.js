@@ -27,6 +27,11 @@ import EventArgs2 from "./EventArgs2";
 import EventProgation from "./EventProgation";
 import EventOnce from "./EventOnce";
 import EventPassive from "./EventPassive";
+import StateForm from "./StateForm";
+import StateFormUC from "./StateFormUC";
+import FormTextarea from "./FormTextarea";
+import FormSelect from "./FormSelect";
+import FormList from "./FormList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -34,7 +39,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<EventPassive />);
+root.render(<FormList />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
