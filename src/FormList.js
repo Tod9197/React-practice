@@ -7,7 +7,6 @@ export default function FormList() {
 
   const handleFormList = (e) => {
     const data = [];
-
     const opts = e.target.options;
     for (const opt of opts) {
       if (opt.selected) {
@@ -28,13 +27,12 @@ export default function FormList() {
   return (
     <form>
       <label htmlFor="animal">好きな動物:</label>
-      <br />
       <select
+        value={form.animal}
         id="animal"
         name="animal"
-        value={form.animal}
-        multiple={true}
         size="4"
+        multiple={true}
         onChange={handleFormList}
       >
         <option value="dog">犬</option>
