@@ -13,12 +13,18 @@ export default function FormBasic() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty, isValid, isSubmitting },
   } = useForm({
     defaultValues,
   });
 
-  const onsubmit = (data) => console.log(data);
+  const onsubmit = (data) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, 4000);
+    });
+  };
   const onerror = (err) => console.log(err);
 
   return (
@@ -90,12 +96,27 @@ export default function FormBasic() {
               value: 10,
               message: "備考は10文字以内にしてください",
             },
+            validate: {
+              ng: (value, formValues) => {
+                const ngs = ["暴力", "死", "グロ"];
+                for (const ng of ngs) {
+                  if (value.includes(ng)) {
+                    return "備考にNGワードが含まれています";
+                    console.log("NGワードあり");
+                  }
+                }
+                return true;
+              },
+            },
           })}
         />
         <div>{errors.memo?.message}</div>
       </div>
       <div>
-        <button type="submit">送信</button>
+        <button type="submit" disabled={!isDirty || !isValid || isSubmitting}>
+          送信
+        </button>
+        {isSubmitting && <div>...送信中...</div>}
       </div>
     </form>
   );

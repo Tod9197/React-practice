@@ -40,6 +40,12 @@ import StateNest from "./StateNest";
 import StateNestImmer from "./StateNestImmer";
 import StateTodo from "./StateTodo";
 import FormBasic from "./FormBasic";
+import FormYup from "./FormYup";
+import FormJapan from "./FormJapan";
+import LazyBasic from "./LazyBasic";
+import LazyMulti from "./Lazy Multi";
+import SuspenseSimple from "./SuspenseSimple";
+import SuspenseResult from "./SuspenseResult";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -47,7 +53,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<FormBasic />);
+root.render(<SuspenseResult />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
