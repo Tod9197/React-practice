@@ -46,6 +46,13 @@ import LazyBasic from "./LazyBasic";
 import LazyMulti from "./Lazy Multi";
 import SuspenseSimple from "./SuspenseSimple";
 import SuspenseResult from "./SuspenseResult";
+import ProfilerBasic from "./ProfilerBasic";
+import StyledBasic from "./StyledBasic";
+import StyledComp from "./StyledComp";
+import MyButton, { MyStyledButton } from "./StyledComp2";
+import StyledProps from "./StyledProps";
+import EmotionJsx from "./EmotionJsx";
+import EmotionComp from "./EmotionComp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -53,7 +60,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<SuspenseResult />);
+root.render(
+  <>
+    <EmotionComp />
+  </>
+);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
