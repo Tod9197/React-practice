@@ -53,6 +53,10 @@ import MyButton, { MyStyledButton } from "./StyledComp2";
 import StyledProps from "./StyledProps";
 import EmotionJsx from "./EmotionJsx";
 import EmotionComp from "./EmotionComp";
+import PortalBasic from "./PortalBasic";
+import ErrorRoot from "./ErrorRoot";
+import ErrorRetryRoot from "./ErrorRetryRoot";
+import ErrorEventRoot from "./ErrorEventRoot";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -60,11 +64,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(
-  <>
-    <EmotionComp />
-  </>
-);
+root.render(<ErrorEventRoot />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
