@@ -59,6 +59,10 @@ import ErrorRetryRoot from "./ErrorRetryRoot";
 import ErrorEventRoot from "./ErrorEventRoot";
 import MaterialBasic from "./MaterialBasic";
 import MaterialDrawer from "./MaterialDrawer";
+import MaterialGrid from "./MaterialGrid";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "./theme";
+import MaterialMode from "./MaterialMode";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -66,7 +70,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<MaterialDrawer />);
+root.render(<MaterialMode />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
