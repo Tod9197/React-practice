@@ -64,6 +64,12 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import MaterialMode from "./MaterialMode";
 import FormMui from "./FormMui";
+import StateEffect from "./StateEffect";
+import HookEffect from "./HookEffect";
+import HookRefNg from "./HookRefNg";
+import HookRef from "./HookRef";
+import HookRefForward from "./HookRefForward";
+import HookCallbackRef from "./HookCallbakRef";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -71,7 +77,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //     <MyHello />
 //   </React.StrictMode>
 // );
-root.render(<FormMui />);
+root.render(<HookCallbackRef />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
